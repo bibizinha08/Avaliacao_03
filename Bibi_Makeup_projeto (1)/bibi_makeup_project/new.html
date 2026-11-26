@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | Bibi Makeup</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho Superior -->
+    <header class="site-header">
+        <a href="index.html" class="brand-logo">Bibi<span> Makeup</span></a>
+
+        <nav class="main-nav" aria-label="Navegação principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produto.html">Ofertas</a></li>
+                <li><a href="new.html" class="active">Cadastro</a></li>
+                <li><a href="login.html">Minha conta</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <a href="login.html" class="btn-header-login">Login</a>
+        </div>
+    </header>
+
+    <!-- Área Principal de Cadastro -->
+    <main class="auth-page">
+        <section class="register-container" aria-label="Cadastro de novo usuário">
+            <h1><span>👤+</span> Criar minha conta</h1>
+
+            <form class="register-form" action="login.html" method="get">
+                <div class="input-group">
+                    <input type="email" placeholder="Digite seu e-mail" aria-label="E-mail" required>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" placeholder="Crie uma senha" aria-label="Senha" required>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" placeholder="Digite seu nome" aria-label="Nome" required>
+                </div>
+
+                <div class="input-group">
+                    <select name="perfil" id="perfil" aria-label="Tipo de perfil">
+                        <option value="visitante">Visitante</option>
+                        <option value="cliente">Cliente</option>
+                        <option value="maquiagem">Apaixonada por maquiagem</option>
+                    </select>
+                </div>
+
+                <fieldset class="radio-group">
+                    <legend>Seus produtos favoritos</legend>
+                    <label>
+                        <input type="radio" name="categoria" value="geometrico" checked>
+                        Produtos para o rosto
+                    </label>
+                    <label>
+                        <input type="radio" name="categoria" value="giz-oleoso">
+                        Batom e produtos para lábios
+                    </label>
+                    <label>
+                        <input type="radio" name="categoria" value="todos">
+                        Um pouco de tudo
+                    </label>
+                </fieldset>
+
+                <div class="profile-upload-section">
+                    <div class="avatar-placeholder" aria-hidden="true">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="#ffffff">
+                            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                        </svg>
+                    </div>
+                    <div class="file-input-wrapper">
+                        <input type="file" id="avatar" name="avatar" accept="image/*" aria-label="Foto de perfil">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit">
+                    <span>👤+</span> Criar conta
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="site-footer">
+        <div class="footer-logo">Bibi Makeup</div>
+        <p>Bibi Makeup: produtos escolhidos com carinho para realçar sua beleza e sua autoestima.</p>
+        <small>© 2026 Bibi Makeup. Todos os direitos reservados.</small>
+    </footer>
+
+</body>
+</html>
